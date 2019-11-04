@@ -21,9 +21,9 @@ Essentially all AWS Glue does is output logs in the format requirred by the Spar
 
 This repo provides a dockerised version of this server to make it as easy as possible to get up and running.
 
-## Instructions 
+## Instructions
 
-### 1. Set your glue job going 
+### 1. Set your glue job going
 
 ### Glue job
 
@@ -53,11 +53,11 @@ mkdir events
 aws s3 sync s3://my-bucket/path-where-i-want-logs-to-go events
 ```
 
-### 5. Run the spark history server and navigate to the web frontend 
+### 5. Run the spark history server and navigate to the web frontend
 
 
 ```
-docker run   -v ${PWD}/events:/tmp/spark-events -p 18080:18080 shs
+docker run -v ${PWD}/events:/tmp/spark-events -p 18080:18080 sparkhistoryserver
 ```
 
 and go to http://127.0.0.1:18080 in your web browser

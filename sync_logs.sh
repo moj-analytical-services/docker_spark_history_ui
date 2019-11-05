@@ -1,1 +1,1 @@
-aws s3 sync s3://alpha-data-linking/glue_test_delete/logsdelete events
+aws s3 sync s3://my-bucket/logs_folder events

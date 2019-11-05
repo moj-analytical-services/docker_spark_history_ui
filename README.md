@@ -59,6 +59,7 @@ aws s3 sync s3://my-bucket/path-where-i-want-logs-to-go events
 ```
 docker run -v ${PWD}/events:/tmp/spark-events -p 18080:18080 sparkhistoryserver
 ```
+Note you need the SPARK_NO_DAEMONIZE environment variable, see [here](https://github.com/apache/spark/blob/41be5125a1581a1c1dd611a98e823f356419f137/sbin/spark-daemon.sh#L30)
 
 and go to http://127.0.0.1:18080 in your web browser
 

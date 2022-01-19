@@ -55,8 +55,8 @@ aws s3 sync s3://my-bucket/path-where-i-want-logs-to-go events
 
 ### 5. Run the spark history server and navigate to the web frontend
 
-
 ```
+# In a new terminal
 docker run -v ${PWD}/events:/tmp/spark-events -p 18080:18080 sparkhistoryserver
 ```
 and go to http://127.0.0.1:18080 in your web browser
